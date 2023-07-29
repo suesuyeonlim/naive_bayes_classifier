@@ -19,13 +19,35 @@ There are benefits of using machine learning models in this type of projects. Th
 
 Among a wide array of machine learning models, I trained four different models: 1) Gradient Boosting; 2) AdaBoost; 3) Naive Bayes; and 4) XGBoost. Among them, Naive Bayes works the best among the four models for this project. In general, Naive Bayes classifier works well for text classification. It calculates the distribution of words showing up for each class (e.g., videos "made for kids" or "not made for kids"), and derives probabilities of having the words that a video has under each class. Finally, it picks the class with a higher probability as the predicted class for the video.
 
-![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/0e79372c-1885-4279-97d6-f9493e89a025)
+1. Gradient Boosting
+
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/8cbf749a-8374-4d41-aaa1-d1cd93274bbc)
+
+2. AdaBoost
+
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/81ac5fe2-4c44-481e-8c31-d9b9db07f166)
+
+3. Naive Bayes
+
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/0b488cc9-5805-41cb-8f07-c569d69e000d)
+
+4. XGBoost
+
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/d058350a-a852-4484-9189-825808c2b03f)
 
 
 ## IV. Training & Result
 For training purposes, I use 75% of the collected videos. I reserve 25% of the videos for testing the accuracy of different models. Also, I use grid search to explore different parameters and find the best ones.
 
 By using Naive Bayes classifier, 92% of videos “made for kids” are identified accurately based on the validation data. Additionally, 98% of videos “not made for kids” are not flagged. It is crucial to consider not only the "made for kids" videos identified correctly, but also the "not made for kids" videos not wrongly concluded as "made for kids". This is because we do not want to find too many false positives and make them subject to the aforementioned constraints.
+
+Below are top 30 keywords associated with kids videos:
+
+<img width="379" alt="image" src="https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/f68cd2ba-7a96-4c65-b184-0a7d381b8de8">
+
+Below are top 30 keywords associated with non-kids videos:
+
+<img width="379" alt="image" src="https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/928b4aa4-c605-433d-9d4a-1205fbc9bde4">
 
 ## V. Next Steps
 - Include more videos for training, especially the videos made for kids. At the moment, the models appear to train better or worse depending on the sample it draws from the majority class as only the same number of videos as the ones made for kids can be sampled.
