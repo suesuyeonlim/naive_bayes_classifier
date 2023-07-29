@@ -17,7 +17,10 @@ There are benefits of using machine learning models in this type of projects. Th
 - They can reduce human efforts of manually reviewing videos
 - Consistent criteria are applied in identifying videos made for kids 
 
-Among a wide array of machine learning models, I am train four different models: 1) Gradient Boosting; 2) AdaBoost; 3) Naive Bayes; and 4) XGBoost. Among them, Naive Bayes works the best among the four models for this project. In general, Naive Bayes classifier works well for text classification. It calculates the distribution of words showing up for each class (e.g., videos "made for kids" or "not made for kids"), and derives probabilities of having the words that a video has under each class. Finally, it picks the class with a higher probability as the predicted class for the video.
+Among a wide array of machine learning models, I trained four different models: 1) Gradient Boosting; 2) AdaBoost; 3) Naive Bayes; and 4) XGBoost. Among them, Naive Bayes works the best among the four models for this project. In general, Naive Bayes classifier works well for text classification. It calculates the distribution of words showing up for each class (e.g., videos "made for kids" or "not made for kids"), and derives probabilities of having the words that a video has under each class. Finally, it picks the class with a higher probability as the predicted class for the video.
+
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/0e79372c-1885-4279-97d6-f9493e89a025)
+
 
 ## IV. Training & Result
 For training purposes, I use 75% of the collected videos. I reserve 25% of the videos for testing the accuracy of different models. Also, I use grid search to explore different parameters and find the best ones.
@@ -28,3 +31,8 @@ By using Naive Bayes classifier, 92% of videos “made for kids” are identifie
 - Include more videos for training, especially the videos made for kids. At the moment, the models appear to train better or worse depending on the sample it draws from the majority class as only the same number of videos as the ones made for kids can be sampled.
 - Try different kinds of parameters to improve the models. Besides alphas and learning rates, there are other parameters such as base estimators, max depths, etc. Tuning such parameters can potentially improve the models.
 - Try different data set-ups to improve the models. Some models may work better even with slightly imbalanced data, which allows using more data from the majority class. Also, for Naive Bayes models, it may potentially make sense to remove correlated words to comply with the assumption of independence.
+
+## VI. Locations of Data/Analysis
+Data: See "Data" folder.
+Analysis: See "Code.ipynb".
+Analysis Summary: See "Project 3 Presentation.pdf".
