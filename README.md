@@ -21,20 +21,19 @@ Among a wide array of machine learning models, I trained four different models: 
 
 1. Gradient Boosting
 
-![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/8cbf749a-8374-4d41-aaa1-d1cd93274bbc)
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/5402f01f-471f-4e21-919d-7393cd379134)
 
 2. AdaBoost
 
-![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/81ac5fe2-4c44-481e-8c31-d9b9db07f166)
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/7b8ccb64-24ce-445a-8faf-2271fcdfdfd1)
 
 3. Naive Bayes
 
-![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/0b488cc9-5805-41cb-8f07-c569d69e000d)
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/10f2ce1c-2268-4074-926a-4428eec25d9e)
 
 4. XGBoost
 
-![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/d058350a-a852-4484-9189-825808c2b03f)
-
+![image](https://github.com/suesuyeonlim/naive_bayes_classifier/assets/19903898/c89c13ae-927a-44e7-b821-2f1fc7451ca5)
 
 ## IV. Training & Result
 For training purposes, I use 75% of the collected videos. I reserve 25% of the videos for testing the accuracy of different models. Also, I use grid search to explore different parameters and find the best ones.
